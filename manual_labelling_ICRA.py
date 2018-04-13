@@ -171,7 +171,7 @@ class FrameLabeler:
         else:
             append_write = 'w' # make a new file if not
         file_content = open(filename,append_write)
-        file_content.write(str(coordinates) + '\n')
+        file_content.write(self.__video_name__ +': '+ str(coordinates) + '\n')
         file_content.close()
         print "Coordinates are appended to " + filename
         # print coordinates
